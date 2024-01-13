@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f8f9fa;
+}
+
+:root {
+  --font-btn: 14px;
+  --font-title-filter: 15px;
+}
+
+.btn-filter {
+  background-color: #f3f4f6;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  padding: 0px;
+}
+
+.btn-filter a {
+  padding: 5px;
+  font-size: var(--font-btn);
+}
+
+/* ======================== Style cho phần lọc sản phẩm theo các tiêu chí ====================*/
+.filter h4 {
+  font-size: var(--font-title-filter);
+  font-weight: bold;
+}
+
+.filter > div {
+  margin-bottom: 18px;
+}
+
+.box-brand {
+  transition: 1s;
+}
+
+.box-brand:hover {
+  transform: scale(1.3);
+}
+
+/* style cho phần left menu */
+.filter {
+  background-color: #fff;
+  padding: 10px;
+  padding-bottom: 5px;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.125), 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.brand-bar-img {
+  background-color: #fff;
+  padding: 10px;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.125), 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.btn-sort h1 {
+  font-size: 16px;
+  padding-top: 10px;
+  margin-right: 10px;
+}
+
+.border-sort-click {
+  border: 2px solid #d70018 !important;
+}
+.btn-sort button {
+  padding: 3px;
+  font-size: 14px;
+  background-color: #fff;
+  /* border: 1px solid #d70018; */
+  border: 1px solid #ccc;
+  outline: none;
+  margin-right: 5px;
+}

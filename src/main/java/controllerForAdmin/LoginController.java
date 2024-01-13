@@ -6,6 +6,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import bean.AdminBEAN;
 import bo.AdminBO;
@@ -32,6 +33,13 @@ public class LoginController extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		request.setCharacterEncoding("UTF-8");
 		response.setCharacterEncoding("UTF-8");
+		
+		HttpSession session = request.getSession();
+		
+		if((String)session.getAttribute("AdminLogin") != null) {
+			response.sendRedirect("http://localhost:8080/NMPhoneShop/Admin/Quan-ly-san-pham");
+			return;
+		}
 		
 		String email = request.getParameter("email");
 		String pass = request.getParameter("password");
@@ -60,8 +68,9 @@ public class LoginController extends HttpServlet {
 				}		
 				
 				if(!isError) {
-					// Đúng thì tạo session và tiến hành redirect trang
-					System.out.println("Ok đúng");
+					session.setAttribute("AdminLogin", email);
+					response.sendRedirect("http://localhost:8080/NMPhoneShop/Admin/Quan-ly-san-pham");
+					return;
 				}
 			}
 			request.getRequestDispatcher("/Admin/Login.jsp").forward(request, response);

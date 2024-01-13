@@ -1,0 +1,109 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box !important;
+}
+
+body {
+	background-color: #F8F8FC;
+}
+
+img {
+	width: 100%;
+}
+
+/* style cho phần title sản phẩm */
+div.product-title h1 {
+	font-size: 20px;
+	padding: 0px;
+	/* padding: 5px 0px; */
+}
+
+div.product-title {
+	padding-left: 0;
+	padding-right: 0;
+	border-bottom: 1px solid #cccc;
+}
+
+/* style cho phần chọn màu, bộ nhớ và nút mua hàng */
+.product-price h1 {
+	color: #cb1c22;
+	font-size: 30px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.product-disk h5,
+.product-ram h5 {
+	font-size: 16px;
+}
+
+.list-button {
+	margin-bottom: 15px;
+}
+
+.list-button button {
+	width: 75px;
+	height: 30px;
+	background-color: #fff;
+	outline: none;
+	border: 1px solid black;
+	font-size: 14px;
+	margin-right: 5px;
+}
+
+.list-button-disk button:nth-child(2) {
+	border: 1px solid #e0423f;
+}
+
+.list-button-color button:nth-child(3) {
+	border: 1px solid #e0423f;
+}
+
+#btn-buy button,
+#btn-add button {
+	width: 100%;
+	background: linear-gradient(#f52f32, #e11b1e);
+	border-radius: 10px;
+	border: none;
+	outline: none;
+	height: 60px;
+	font-size: 13px;
+	color: #fff;
+}
+
+#btn-add button {
+	background: none;
+	background-color: #fff;
+	border: 1px solid red;
+	color: red;
+	font-size: 16px;
+}
+
+.bg-box-shadow {
+	background-color: #fff;
+	border-radius: 5px;
+	/* box-shadow: 0 1px 2px 0 rgba(0,0,0,0.05); */
+	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.btn-choose {
+	border: 1px solid red !important;
+	color: red;
+}
+
+body {
+	position: relative;
+}
+
+#img-contianer {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	overflow: hidden;
+}

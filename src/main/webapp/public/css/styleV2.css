@@ -1,0 +1,165 @@
+/* 12-14-16-18 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+
+:root {
+    --font-navbar: 14px;
+    --font-title: 22px;
+}
+
+body {
+    background-color: #F4F5F8 !important;
+    
+    }
+
+a {
+    text-decoration: none;
+}
+/* ==================== style cho phần nav bar =====================*/
+.font-nav {
+    font-size: var(--font-navbar) !important;
+}
+
+#nav-bg {
+    background-color: #d70018;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,.1),0 2px 4px -1px rgba(0,0,0,.06);
+}
+
+.navbar a:not(.dropdown-menu a){
+    color: white !important;
+   
+}
+
+#search-form {
+    width: 250px;
+}
+
+.navbar-brand {
+    font-size: 35px !important;
+}
+
+.nav-item a img {
+    width: 40px;
+    color: #fff !important;
+}
+
+@media screen and (max-width: 600px) {
+    ul.navbar-nav {
+        align-items: flex-start !important;
+    }
+
+    form[role="search"], .nav-item i {
+        display: none !important;
+    }
+
+}
+  
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+/* =======================Style cho phần điện thoại mới ==========================*/
+.title-menu-product {
+    font-size: 20px;
+
+}
+
+span.all-product-link a{
+    font-size: 15px;
+    color: #EE7D31;
+}
+
+.product-wrapper {
+    /* padding: 0px !important; */
+    /* height: 350px; */
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.05);
+    transition: all ease .3s;
+    position: relative;
+}
+
+.product-wrapper:hover {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    transform: translate(0px,-8px);
+}
+
+.img-product {  
+    height: 180px;
+}
+
+.img-product img {
+    width: 100%;
+    height: 100%;
+}
+
+.product-name {
+    margin-top: 25px;
+    height: 50px;
+    font-size: 14px;
+    text-align: center;
+    overflow: hidden;
+
+}
+
+.product-price {
+    color: #d70018;
+    font-size: 18px;
+    text-align: center;
+
+}
+
+.btn-buy-now {
+    padding: 0px;
+}
+
+.btn-buy-now button {
+    color: #fff;
+    padding: 5px;
+    font-size: 18px;
+    background-color: #d70018;
+    border: none;
+    outline: none;
+    width: 100%;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+/* style cho left-menu filter */
+.filter {
+    background-color: #fff !important;
+}
+
+/* ==================== */
+.footer {
+    /* background-color: #ffff; */
+    /* background-color: #f2f2f2 !important; */
+    background-color: #fff;
+    padding: 15px;
+    font-size: 16px;
+}
+
+.footer li {
+    list-style-position: inside;
+}
+
+.footer li{
+    list-style: none;
+    list-style-position: inside;
+}
+
+.footer li:hover {
+    cursor: pointer;
+}
+

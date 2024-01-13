@@ -8,29 +8,13 @@ public class AdminBEAN {
 	private String soDienThoai;
 	private boolean gioiTinh;
 	private String diaChi;
-
-	public AdminBEAN() {
-		super();
-	}
-
+	
 	public AdminBEAN(int id, String email, String matKhau, String hoTen) {
 		super();
 		this.id = id;
 		this.email = email;
 		this.matKhau = matKhau;
 		this.hoTen = hoTen;
-	}
-
-	public AdminBEAN(int id, String email, String matKhau, String hoTen, String soDienThoai, boolean gioiTinh,
-			String diaChi) {
-		super();
-		this.id = id;
-		this.email = email;
-		this.matKhau = matKhau;
-		this.hoTen = hoTen;
-		this.soDienThoai = soDienThoai;
-		this.gioiTinh = gioiTinh;
-		this.diaChi = diaChi;
 	}
 
 	public int getId() {
@@ -88,4 +72,9 @@ public class AdminBEAN {
 	public void setDiaChi(String diaChi) {
 		this.diaChi = diaChi;
 	}
+	
+	
+	
+	
+
 }

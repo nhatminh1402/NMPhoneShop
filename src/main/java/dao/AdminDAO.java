@@ -4,6 +4,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
 import bean.AdminBEAN;
+import common.DBConncet;
 
 public class AdminDAO {
 	private PreparedStatement preP = null;

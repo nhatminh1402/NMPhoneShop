@@ -25,4 +25,7 @@ public class MD5Encryptor {
 		return enrtext;
 	}
 
+	public static void main(String[] args) throws NoSuchAlgorithmException, UnsupportedEncodingException {
+		System.out.println(MD5Encryptor.ecrypt("Nhatminh1402@"));
+	}
 }

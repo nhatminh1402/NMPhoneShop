@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+#shopping-cart-title {
+  font-size: 24px;
+  padding: 5px;
+  border-bottom: 1px solid #ccc;
+}
+
+.btn-back-to-product {
+  padding: 5px;
+  font-size: 16px;
+}
+
+.product-content h1 {
+  font-size: 18px;
+}
+
+.btn-increase,
+.btn-decrease {
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 14px;
+  background-color: #f4f3f3;
+  border: 1px solid #f4f3f3;
+  outline: none;
+}
+
+/* .product-button div{
+    margin-top: 50%;
+} */
+
+.product-button .quantity {
+  font-size: 18px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.bg-box-shadow {
+  background-color: #fff;
+  border-radius: 5px;
+  /* box-shadow: 0 1px 2px 0 rgba(0,0,0,0.05); */
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  transition: all ease-in-out .3s;
+}
+
+.bg-box-shadow:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+ 
+}
+
+.Thanh-tien h1:first-child {
+  font-size: 24px;
+}
+
+.Thanh-tien h1:last-child {
+  font-size: 20px;
+  color: #d70018;
+}
+
+.btn-buy {
+  width: 150px;
+  padding: 10px;
+  background-color: #d70018;
+  color: #fff;
+  border: 1px solid #d70018;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: all ease-in-out .3s;
+}
+
+.btn-buy:hover {
+  opacity: 0.9;
+}

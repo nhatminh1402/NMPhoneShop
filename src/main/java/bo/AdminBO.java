@@ -1,6 +1,9 @@
 package bo;
 
+import java.util.ArrayList;
+
 import bean.AdminBEAN;
+import bean.HangSanXuatBEAN;
 import dao.AdminDAO;
 
 public class AdminBO {
@@ -13,4 +16,6 @@ public class AdminBO {
 	public AdminBEAN getAdmin(String email, String password) throws Exception {
 		return aDAO.getAdmin(email, password);
 	}
+	
+	
 }
